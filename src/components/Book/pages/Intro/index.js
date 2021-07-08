@@ -4,7 +4,7 @@ import "./index.css";
 const Intro = React.forwardRef((props, ref) => {
   return (
     <div className="page" ref={ref}>
-      <div className="page-content">
+      <div className="page-content" style={{"marginTop": "16px"}}>
         <div
           className="page-image"
           style={{

@@ -15,7 +15,7 @@ const Quiz = React.forwardRef((props, ref) => {
             <li className="option" data-target="planets">planets</li>
             <li className="option" data-target="Mercury">Mercury</li>
             <li className="option" data-target="stars">stars</li>
-            <li className="option" data-target="ashes">moon</li>
+            <li className="option" data-target="moon">moon</li>
           </ul>
         <div className="answers">
           <ol>
