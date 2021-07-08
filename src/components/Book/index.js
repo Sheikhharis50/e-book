@@ -1,6 +1,9 @@
 import React, { useCallback } from "react";
 import HTMLFlipBook from "react-pageflip";
-import Page from "./Page";
+import Page1 from "./pages/Intro";
+import Page2 from "./pages/IntroRight";
+import Page3 from "./pages/Animation";
+import Page4 from "./pages/Quiz";
 import "./index.css";
 
 const FlipBookProps = {
@@ -25,9 +28,10 @@ const Book = (props) => {
   return (
     <div className="book">
       <HTMLFlipBook {...FlipBookProps} onFlip={onFlip} usePortrait={true}>
-        {[...Array(10)].map((_, index) => (
-          <Page key={index} number={index + 1} />
-        ))}
+          <Page1 key={0} number={1} />
+          <Page2 key={1} number={2} />
+          <Page3 key={2} number={3} />
+          <Page4 key={3} number={4} />
       </HTMLFlipBook>
     </div>
   );
