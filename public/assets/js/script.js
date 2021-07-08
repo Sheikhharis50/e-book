@@ -3,7 +3,6 @@
 */
 
 $(document).ready( function() {
-    console.log("Hi");
     //initialize the quiz options
     var answersLeft = [];
     $('.quiz-wrapper').find('li.option').each( function(i) {
